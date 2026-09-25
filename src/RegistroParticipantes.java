@@ -1,10 +1,10 @@
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Scanner;
 import java.util.Set;
 
 public class RegistroParticipantes {
     public static void main(String[] args) {
-        Set<String> estudiantes = new HashSet<>();
+        Set<String> estudiantes = new TreeSet<>();
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
 
