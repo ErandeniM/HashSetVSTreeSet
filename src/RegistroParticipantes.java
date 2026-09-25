@@ -16,7 +16,7 @@ public class RegistroParticipantes {
             System.out.println("4. Mostrar estudiantes");
             System.out.println("5. Mostrar numero de estudiantes");
             System.out.println("6. Salir");
-            System.out.println("7. Salir");
+            System.out.println("7. Prueba");
             System.out.print("Opcion: ");
 
             opcion = sc.nextInt();
