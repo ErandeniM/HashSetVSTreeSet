@@ -16,6 +16,7 @@ public class RegistroParticipantes {
             System.out.println("4. Mostrar estudiantes");
             System.out.println("5. Mostrar numero de estudiantes");
             System.out.println("6. Salir");
+            System.out.println("7. Salir");
             System.out.print("Opcion: ");
 
             opcion = sc.nextInt();
@@ -70,6 +71,18 @@ public class RegistroParticipantes {
 
                 case 6:
                     System.out.println("Saliendo...");
+                    break;
+
+                case 7:
+                    System.out.println("Estudiantes entre A0020 y A0080:");
+                    Set<String> rango = ((TreeSet<String>) estudiantes).subSet("A0020", true, "A0080", true);
+                    if (rango.isEmpty()) {
+                        System.out.println("No hay estudiantes en ese rango.");
+                    } else {
+                        for (String e : rango) {
+                            System.out.println(e);
+                        }
+                    }
                     break;
 
                 default:
